@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>IMDb Styled Movie Page</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .moviePic {
+      height: 400px;
+      width: 270px;
+      opacity: 0.9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .moviePic:hover {
+      opacity: 1;
+    }
+
+    .movieDetail {
+      position: relative;
+      top: 30px;
+      width: 60%;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 32px;
+      color: #ffd700;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>The Dark Knight</h1>
+  <img class="moviePic" src="https://m.media-amazon.com/images/I/51CbXPXVL+L._AC_SY679_.jpg" alt="Movie Poster">
+  <p class="movieDetail">
+    When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, 
+    Batman must accept one of the greatest psychological and physical tests of his ability 
+    to fight injustice.
+  </p>
 </body>
-
 </html>
